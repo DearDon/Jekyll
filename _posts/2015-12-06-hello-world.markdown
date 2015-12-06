@@ -1,7 +1,7 @@
 ---
-layout:default
-title: hello, world
+layout: post
+title: "hello, world!"
+date: 2015-12-06 13:27:00
+categories: self diary
 ---
-{ { page.title } }
-	我来了，博客君
-{ { page.data|date_to_string } }
+	我来了，博客君!
