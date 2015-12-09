@@ -12,7 +12,7 @@ paginate_path: "page:num"
 # presonal config
 domain: www.deardon.net
 title: Don's Blog
-description: ng...
+description: 学习，记录，交流，分享...
 author: Don
 email: dpdeng@whu.edu.cn
 github: DearDon
