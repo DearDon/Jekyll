@@ -5,7 +5,7 @@
 					{% if cat[0] != 'blog' %} 
 				 <a name="{{ cat[0] }}"></a>
                   <li>
-                    <a href="/categories.html#self">
+				  <a href="/categories.html#{{ cat[0] }}">
 						{{ cat[0] }}
                     </a>
                   </li>
@@ -13,12 +13,12 @@
 				{% endfor %} 
                 </ul>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <ul class="list-unstyled">
 					<h4> 归 档</h4>
                     {% for post in site.posts limit:100 %} 
 	                {% unless post.next %} 
-                   <h5>{{ post.date | date: '%Y' }}</h5> 
+					<h4><font size="+0.5">{{ post.date | date: '%Y' }}</font></h4> 
 	               {% else %} {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %} {% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %} 
 	               {% if year != nyear %} 
                    <h5>{{ post.date | date: '%Y' }}</h5> {% endif %} 
