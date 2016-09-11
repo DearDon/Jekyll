@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "hello, world!"
-date:   2015-12-06 10:48:20
+date:   2015-12-06
 categories: 杂七杂八
 tags: beginning
 ---
