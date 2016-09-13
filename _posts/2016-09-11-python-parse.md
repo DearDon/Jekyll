@@ -2,7 +2,7 @@
 layout: post
 title: python之parse参数 
 date: 2016-09-11
-categories: Python
+categories:  python
 tags: python argparse lxml
 ---
 ####<strong>History:</strong>
