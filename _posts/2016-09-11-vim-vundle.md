@@ -7,13 +7,13 @@ tags: Vim Vundle
 ---
 ####<strong>History:</strong>
 *<em>20160911v1</em>: 将内容记录下来</br>
+*<em>20160913v2</em>: 修改排版</br>
 
 ####<strong>Backgound:</strong>
 Vim非常强大，其中一个重要原因是丰富的插件。为了高效管理插件，Vundle(Vim bundle)是不错的选择，它也是一个vim的插件，但它可以管理其他插件，所以装好它其它插件都so easy.</br>
 以下安装基于linux，参考自Vundle在github上的[项目说明](https://github.com/VundleVim/Vundle.vim)，原文写得很清楚，这里只是简单翻译。
 
 ####<strong>Content:</strong>
-</br>
 1.建立Vundle:</br>
 
     $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
