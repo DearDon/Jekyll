@@ -1,12 +1,13 @@
 ---
 layout: post
-title: hadoop搭建
+title: hadoop分布式集群搭建
 date: 2016-09-17
 categories: 折腾折腾
 tags: Hadoop Tofinish
 ---
 ####<strong>History:</strong>
 *<em>20160917v1</em>:简单记录Hadoop的安装流程及遇到的问题</br>
+*<em>20160920v1</em>:修正ip设置错误和部分描述</br>
 
 ####<strong>Background:</strong>
 Hadoop已经火了很久了，自己也对它也有好奇心挺久了，记得因为它自己才正式接触学习的java(mapreduce框架是基于Java的)。</br>
@@ -32,7 +33,7 @@ Hadoop已经火了很久了，自己也对它也有好奇心挺久了，记得�
     Hostname        IP
     master-desktop  10.133.24.235	
     slave1-desktop  10.133.24.228	
-    slave2-desktop  10.133.33.207	
+    slave2-desktop  10.133.24.229	
 
 
 <strong>二.安装ssh,并设置免密登陆</strong></br>
@@ -48,7 +49,7 @@ Hadoop已经火了很久了，自己也对它也有好奇心挺久了，记得�
 
     10.133.24.235	master-desktop
     10.133.24.228	slave1-desktop
-    10.133.33.207	slave2-desktop
+    10.133.24.229	slave2-desktop
 
 并在/etc/hostname内容修改为对应节点的主机名,如节点master-desktop将hostname文件内容改为master-desktop，其它节点同理修改。现在ssh命令进一步简化为了`$ ssh $hostname`，但仍然要输入密码。
 
@@ -82,7 +83,7 @@ c.hadoop要求的ssh流程不仅包括master->slave，还有master->master(但�
     export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
 
 <strong>2.hadoop配置:</strong></br>
-主要有三类文件要配置</br>
+主要有三类文件要配置, 有的文件(如slaves)只需要在master上配置，slave节点中不需要。但是安全起见，建议全部配置，保持master和slave节点的hadoop安装配置完全一致。</br>
 <strong>四个xml文件:core-site.xml,hdfs-site.xml,mapred-site.xml,yarn-site.xml</strong></br>
 core-site.xml原文件改为
 
@@ -239,14 +240,7 @@ slaves文件内容改为(若没有，则新建)
 
 因此在启动hadoop前要确保每种要求的连接流程(master->all slaves, 以及尤其容易忘记的master->master)都经过先手动连一次(只要一次就行),并输入yes。
 
-<strong>四.ip地址无法解析</strong></br>
-在执行start-dfs.sh命令时，从服务器的DateNode节点打印如下错误日志：
-
-    2015-01-16 17:06:54,375 ERROR org.apache.hadoop.hdfs.server.datanode.DataNode: Initialization failed for Block pool BP-1748412339-10.0.1.212-1420015637155 (Datanode Uuid null) service to /10.0.1.218:9000 Datanode denied communication with namenode because hostname cannot be resolved (ip=10.0.1.217, hostname=10.0.1.217): DatanodeRegistration(0.0.0.0, datanodeUuid=3ed21882-db82-462e-a71d-0dd52489d19e, infoPort=50075, ipcPort=50020, storageInfo=lv=-55;cid=CID-4237dee9-ea5e-4994-91c2-008d9e804960;nsid=358861143;c=0)
-
-大意是无法将ip地址解析成主机名，也就是无法获取到主机名，需要在/etc/hosts中进行指定(见前面ssh配置的说明)。
-
-<strong>五.集群的用户名忘记设为一致了</strong></br>
+<strong>四.集群的用户名忘记设为一致了</strong></br>
 有可能会事先没有设好各节点相同的用户名，这种情况，如果代价不大，安全起见，最好重新搭建。不想重新来，可参考以下方法为免密互联(ssh)创建同名用户——hadoop
 
 1.原用户下sudo useradd hadoop,创建用户名,并用sudo passwd hadoop根据提示为其设置密码(不设置密码不能使用该用户)
