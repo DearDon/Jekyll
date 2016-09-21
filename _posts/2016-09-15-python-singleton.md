@@ -7,6 +7,7 @@ tags: python singleton
 ---
 ####<strong>History:</strong>
 *<em>20160911v1</em>:将实现单例的代码和注释记录下来</br>
+*<em>20160921v2</em>:更新跨模块单例失败的问题</br>
 
 ####<strong>Background:</strong>
 Singleton是创建模式中很典型的一类，在Java中是通过将构造函数private来实现的。在python中，没有private，我们通过share一个类或子类的所有成员变量来实现单例。</br>
@@ -59,20 +60,23 @@ Singleton是创建模式中很典型的一类，在Java中是通过将构造函�
     if __name__ == '__main__':
         main()
 
-    # output
-    #rm1: Init
-    #rm1: 1
-    #rm1: [2, 4]
-    #rm2: Init
-    #rm2: 1
-    #rm2: [2, 4]
-    #rm3: Init
-    #rm3: 1
-    #rm3: [2, 4]
-    #rm4: Init
-    #rm4: 1
-    #rm4: [2, 4]
-    #rm1 id: 3078847052
-    #rm2 id: 3078848332
-    #rm3 id: 3078848364
-    #rm4 id: 3078848396
+运行上面代码，得到如下output，实现了共享方式的"单例"。
+
+    rm1: Init
+    rm1: 1
+    rm1: [2, 4]
+    rm2: Init
+    rm2: 1
+    rm2: [2, 4]
+    rm3: Init
+    rm3: 1
+    rm3: [2, 4]
+    rm4: Init
+    rm4: 1
+    rm4: [2, 4]
+    rm1 id: 3078847052
+    rm2 id: 3078848332
+    rm3 id: 3078848364
+    rm4 id: 3078848396
+
+最新实践发现，这种多个对象模拟单例对象的另一个问题————不能跨模块。如果在其它文件中导入该单例模块，再新建单例类的对象，会发现各模块中的单例对象不能实现共享了。
