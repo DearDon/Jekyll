@@ -196,7 +196,7 @@ slaves文件内容改为(若没有，则新建)
 老版本还有master文件，2.5.2取消了。
 
 <strong>五.hadoop启动和检验</strong></br>
-设置完成后，就可以尝试启动了。
+设置完成后，就可以尝试启动了。正常情况下，所有hadoop操作均只需要在master上进行。
 
     $ hdfs namenode -format #仅第一次启动时要先格式化文件
     $ start-dfs.sh #启动dfs服务
