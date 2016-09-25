@@ -1,13 +1,11 @@
-markdown: redcarpet
+markdown: kramdown
+kramdown:
+    input: GFM
+highlighter: rouge
 permalink: /:categories/:title.html
 url: 
 lsi: false
-pygments: true
 safe: true
-auto: false 
-
-paginate: 8
-paginate_path: "page:num"
 
 # presonal config
 domain: www.deardon.net
