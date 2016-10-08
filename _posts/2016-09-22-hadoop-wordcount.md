@@ -15,8 +15,8 @@ hadoop上最经典的入门案例就是wordcount了，经典到在hadoop2.5.2的
 
 不过由于是在单机上虚拟出来的分布式环境，其实硬件资源跑三个虚拟机已经够呛了，所以hadoop的威力体现并不明显，wordcount跑了不少时间。<br>
 但至少成功体验了跑一遍job，对hadoop感受更直接了。
-#### <strong>Content:</strong>
 
+#### <strong>Content:</strong>
 <strong>一.为wordcount任务设定好输入输出</strong><br>
 记得hadoop的所有操作都要在启动hadoop后呀，且正常情况下操作均只在master上(出异常时可能要去slave上检查，如本文后面删除各节点上有问题的dfs)。
 
