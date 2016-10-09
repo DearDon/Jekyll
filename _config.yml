@@ -7,6 +7,11 @@ url:
 lsi: false
 safe: true
 
+paginate: 5
+paginate_path: "page:num"
+
+gems: [jekyll-paginate]
+
 # presonal config
 domain: www.deardon.net
 title: Don's Blog

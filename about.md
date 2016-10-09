@@ -2,8 +2,9 @@
 layout: default
 title: "关于：About"
 ---
-####Basic Info
+
+#### Basic Info
 I'm Don, as a leaner in China.  
 
-####Links
+#### Links
 GitHub: <https://github.com/{{ site.github }}>  
