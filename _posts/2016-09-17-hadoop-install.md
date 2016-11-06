@@ -6,8 +6,8 @@ categories: 折腾折腾
 tags: Hadoop Tofinish
 ---
 #### <strong>History:</strong>
-* <em>20160917</em>:简单记录Hadoop的安装流程及遇到的问题<br>
-* <em>20160920</em>:修正ip设置错误和部分描述<br>
+* <em>2016-09-17</em>:简单记录Hadoop的安装流程及遇到的问题<br>
+* <em>2016-09-20</em>:修正ip设置错误和部分描述<br>
 
 #### <strong>Background:</strong>
 Hadoop已经火了很久了，自己也对它也有好奇心挺久了，记得因为它自己才正式接触学习的java(mapreduce框架是基于Java的)。<br>

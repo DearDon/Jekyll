@@ -6,8 +6,8 @@ categories: python
 tags: python singleton 
 ---
 #### <strong>History:</strong>
-* <em>20160911</em>:将实现单例的代码和注释记录下来<br>
-* <em>20160921</em>:更新跨模块单例失败的问题<br>
+* <em>2016-09-11</em>:将实现单例的代码和注释记录下来<br>
+* <em>2016-09-21</em>:更新跨模块单例失败的问题<br>
 
 #### <strong>Background:</strong>
 Singleton是创建模式中很典型的一类，在Java中是通过将构造函数private来实现的。在python中，没有private，我们通过share一个类或子类的所有成员变量来实现单例。<br>

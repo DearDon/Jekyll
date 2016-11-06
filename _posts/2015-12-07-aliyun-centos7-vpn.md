@@ -6,8 +6,8 @@ categories:  折腾折腾
 tags: VPN CentOS7 阿里云 Tofinish
 ---
 #### <strong>History:</strong>
-* <em>20151207</em>: 将内容尽量记录下来<br>
-* <em>20160913</em>: 修改排版<br>
+* <em>2015-12-07</em>: 将内容尽量记录下来<br>
+* <em>2016-09-13</em>: 修改排版<br>
 
 #### <strong>Backgound:</strong>
 首先说下在centos7上VPN服务器建立的背景，当时由于买了个阿里ECS，想着不能浪费了，就考虑该在上面折腾点啥，结果就想到了VPN，翻墙的厉器啊！<br>

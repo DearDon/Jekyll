@@ -6,9 +6,9 @@ categories: 折腾折腾
 tags:  jekyll github ubuntu10.04 Tofinish
 ---
 #### <strong>History:</strong>
-* <em>20151206</em>: 快速将内容记录了下来<br>
-* <em>20151227</em>: 对格式和段落进行分划
-* <em>20160925</em>: add easy install in ubuntu16.04
+* <em>2015-12-06</em>: 快速将内容记录了下来<br>
+* <em>2015-12-27</em>: 对格式和段落进行分划
+* <em>2016-09-25</em>: add easy install in ubuntu16.04
 
 #### <strong>Backgound:</strong>
 内容参考的github官方的[说明](https://help.github.com/articles/using-jekyll-with-pages/)，比较可靠。<br> 

@@ -6,7 +6,7 @@ categories: 折腾折腾
 tags: Vim Upgrade apt-get
 ---
 #### <strong>History:</strong>
-* <em>20160911</em>:将内容记录下来<br>
+* <em>2016-09-11</em>:将内容记录下来<br>
 
 #### <strong>Background:</strong>
 由于自己ubuntu10.04的自带vim版本低于7.3(可用`vim --version`查看)，而安装vim插件YouCompleteMe要求至少7.3以上。因此折腾升级vim版本，这里尽量不想重编译安装。尝试了几次，失败了。

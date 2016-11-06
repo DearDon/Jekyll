@@ -6,7 +6,7 @@ categories: python
 tags: python Tofinish 
 ---
 #### <strong>History:</strong>
-* <em>20160915</em>:将内容记录下来<br>
+* <em>2016-09-15</em>:将内容记录下来<br>
 
 #### <strong>Background:</strong>
 numpy和scipy是python的第三方模块，但是数学计算(ML)中很有用。

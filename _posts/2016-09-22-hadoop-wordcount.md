@@ -6,7 +6,7 @@ categories: 折腾折腾
 tags: Hadoop Wordcount
 ---
 #### <strong>History:</strong>
-* <em>20160922</em>:将内容记录下来<br>
+* <em>2016-09-22</em>:将内容记录下来<br>
 
 #### <strong>Background:</strong>
 之前介绍了用PC机借助虚拟机搭建分布式hadoop，这篇介绍用它体验hadoop的操作。
