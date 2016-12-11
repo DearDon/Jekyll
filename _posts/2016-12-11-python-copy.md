@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Markdown init
+title: Python copy file or folder
 date: 2016-12-11
 categories: python
 tags: shutil copy
