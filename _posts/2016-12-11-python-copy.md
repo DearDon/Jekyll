@@ -34,18 +34,30 @@ copytree, it can cp folder to folder<br>
 the dst file/folder must not exist.<br>
 available command: shutil.copytree folder folder
 
-    import shutil
+{% highlight python linenos %}
+import shutil
 
-    def main():
-        srcfolder='./folder/SRC'
-        src='./folder/SRC/a'
-        dst='./folder/DST/a'
-        dstfolder='./folder/DST/'
-        # shutil.copy(src, dstfolder)
-        # shutil.copy2(src, dst)
-        # shutil.copyfile(src, dst)
-        shutil.copytree(srcfolder, dstfolder)
-        # shutil.copymode(srcfolder, dstfolder)
+def main():
+    srcfolder='./folder/SRC'
+    src='./folder/SRC/a'
+    dst='./folder/DST/a'
+    dstfolder='./folder/DST/'
+    # shutil.copy(src, dstfolder)
+    # shutil.copy2(src, dst)
+    # shutil.copyfile(src, dst)
+    shutil.copytree(srcfolder, dstfolder)
+    # shutil.copymode(srcfolder, dstfolder)
 
-    if __name__ == '__main__':
-        main()
+if __name__ == '__main__':
+    main()
+{% endhighlight %}
+
+
+
+{% highlight ruby linenos %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
+

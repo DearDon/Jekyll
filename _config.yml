@@ -3,24 +3,30 @@ kramdown:
     input: GFM
 highlighter: rouge
 permalink: /:categories/:title.html
-url: 
+url: www.deardon.win
 lsi: false
 safe: true
+future: false
+line_numbers: true
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile']
 
 paginate: 5
 paginate_path: "page:num"
 
-gems: [jekyll-paginate]
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
 
 # presonal config
-domain: www.deardon.net
+domain: www.deardon.win
 title: Don's Blog
 description: 学习，记录，交流，分享...
 author: Don
 email: dpdeng@whu.edu.cn
 github: DearDon
+base_path: /home/don/Blog
 
 config:
   js_dir:
-  img_dir:
+  img_dir: images
   css_dir:
