@@ -17,7 +17,7 @@ date: {{resources['metadata']['name'][0:10]}}
 
 
 {% block input %}
-{{ '{% highlight python %}' }}
+{{ '{% highlight python linenos %}' }}
 {{ cell.source }}
 {{ '{% endhighlight %}' }}
 {% endblock input %}
