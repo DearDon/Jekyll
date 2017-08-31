@@ -9,11 +9,17 @@ layout: default
 	  <!-- correction
 	  <a href="https://github.com/{{ site.github }}/{{ site.github }}.github.com/edit/master/{{ page.path }}" target="_blank">纠错</a>
 	  -->
-	  &nbsp;&nbsp;
-	<span class="glyphicon glyphicon-time"></span>
-	{{ page.date | date_to_string }}
+    <span class="glyphicon glyphicon-time"></span>
+    {{ page.date | date_to_string }}
   </div>
 </h2>
+<span class="glyphicon glyphicon-folder-open"></span>
+&nbsp;
+{{ page.categories }}
+&emsp;
+<span class="glyphicon glyphicon-tags"></span>
+&nbsp;
+{{ page.tags }}
 <!-- Author -->
 <hr>
 {{ content }}

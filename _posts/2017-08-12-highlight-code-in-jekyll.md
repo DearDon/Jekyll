@@ -2,21 +2,19 @@
 layout: post
 title: Highlight Code In Jekyll
 date: 2017-08-12 
-categories: other
-tags: notebook 
+categories: trial
+tags: jekyll 
  
 --- 
  
-#### **History:** 
+#### **Abstract:** 
  
-* <em>2017-08-12</em>: create post for recording how to highlight code syntax in
-jekyll post by rouge, including install, setting and usage. 
+I demostrate how I highlight the code in my `jekyll v3.*` post by rouge.<br> 
  
-#### **Background:** 
+#### **Content:** 
  
 Code is the most usual block we record for a technical blog. However code
-without good highlight and format is a mess for reading. Here I demostrate how I
-highlight the code in my jekyll(v3.\*) post by rouge. 
+without good highlight and format is a mess for reading. 
  
 Old version of jekyll use redcarpet by default, and use pygments to highlight
 code. Since Jekyll upgrade to v3.\*, it only suppport kramdown.
@@ -26,8 +24,6 @@ code highlighter.
 According to <https://sacha.me/articles/jekyll-rouge/>, the easiest way to use
 Rouge is using the kramdown markdown parser. They recently added native support
 for Rouge and Jekyll has been supporting kramdown for a while now.<br> 
- 
-#### **Content:** 
  
 ##### 1.Install 
  
@@ -147,3 +143,8 @@ file to tell highlight which color style should be used!!<br>
 So if you have the same problem, just generate the css file for your page. 
  
 Please get details from the post for generate syntax.css file!! 
+ 
+#### **History:** 
+ 
+* <em>2017-08-12</em>: create post for recording how to highlight code syntax in
+jekyll post by rouge, including install, setting and usage. 

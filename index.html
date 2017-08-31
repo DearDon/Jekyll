@@ -8,17 +8,23 @@ title: "首页：Home"
   </small>
 </h1>
 <!-- Loop output paged posts -->
-{% for post in site.posts %}
+{% for post in site.posts limit:5 %} 
 <h2>
   <a href="{{ post.url }}">
     {{ post.title }}
   </a> 
   <div class="post-date">
 	<span class="glyphicon glyphicon-time"></span>
-	{{ post.date | date_to_string }}
+    {{ post.date | date_to_string }}
   </div>
 </h2>
-<hr>
+<span class="glyphicon glyphicon-folder-open"></span>
+&nbsp;
+{{ post.categories }}
+&emsp;
+<span class="glyphicon glyphicon-tags"></span>
+&nbsp;
+{{ post.tags }}
 {{ post.excerpt }}
 	<p> <a href="{{ post.url }}"><span >阅读全文 &raquo; </span></a></p>
 <hr>

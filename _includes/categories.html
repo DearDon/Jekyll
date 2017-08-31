@@ -1,32 +1,32 @@
 		      <h4>&nbsp&nbsp 分 类</h4>
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <ul class="list-unstyled">
-				{% for cat in site.categories %} 
-                {% if cat[0] == 'python' or cat[0] == 'nature' %} 
+                {% for cat in site.categories %} 
+                <!--{% if cat[0] != 'blog' %} -->
 				 <a name="{{ cat[0] }}"></a>
                   <li>
 				  <a href="/categories.html#{{ cat[0] }}">
 						{{ cat[0] }}
                     </a>
                   </li>
-				{% endif %} 
+				<!--{% endif %} -->
 				{% endfor %} 
                 </ul>
               </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled">
-				{% for cat in site.categories %} 
-					{% if cat[0] != 'blog' and cat[0] !='algorithm' and cat[0] !='python'%} 
-				 <a name="{{ cat[0] }}"></a>
-                  <li>
-				  <a href="/categories.html#{{ cat[0] }}">
-						{{ cat[0] }}
-                    </a>
-                  </li>
-				   {% endif %} 
-				{% endfor %} 
-                </ul>
-              </div>
+              <!--<div class="col-lg-6">-->
+                <!--<ul class="list-unstyled">-->
+				<!--{% for cat in site.categories %} -->
+					<!--{% if cat[0] != 'blog' and cat[0] !='algorithm' and cat[0] !='python'%} -->
+				 <!--<a name="{{ cat[0] }}"></a>-->
+                  <!--<li>-->
+				  <!--<a href="/categories.html#{{ cat[0] }}">-->
+						<!--{{ cat[0] }}-->
+                    <!--</a>-->
+                  <!--</li>-->
+				   <!--{% endif %} -->
+				<!--{% endfor %} -->
+                <!--</ul>-->
+              <!--</div>-->
               <div class="col-lg-12">
                 <ul class="list-unstyled">
 					<h4> 归 档</h4>

@@ -2,34 +2,30 @@
 layout: post
 title: Plot Kmeans Assumptions
 date: 2017-08-13 
-categories: ml
-tags: k-means clustering 
+categories: scikit-learn
+tags: machine-learning ;&nbsp; python 
  
 --- 
  
-#### **History:** 
- 
-* <em>2017-08-13</em>: create post for demonstration of k-means assumptions 
- 
-#### **Background:** 
+#### **Abstract:** 
  
 This example is meant to illustrate situations where k-means will produce
-`unintuitive` and `possibly unexpected` clusters.
-
+`unintuitive` and `possibly unexpected` clusters.<br> 
+ 
+#### **Content:** 
+ 
 In the first three row plots, the input data does not conform to some implicit
 assumption that k-means makes and
 undesirable clusters are produced as a result. In the last plot, k-means returns
-intuitive clusters despite unevenly sized blobs.
-
+intuitive clusters despite unevenly sized blobs. 
+ 
 For each row, left imange is the result from k-means, right is the data we
-generated, which you can treat as the real cluster. The code below is derived
-from [sklearn web](http://scikit-
+generated, which you can treat as the real cluster. The code below is based on
+[sklearn web](http://scikit-
 learn.org/stable/auto_examples/cluster/plot_kmeans_assumptions.html#sphx-glr-
 auto-examples-cluster-plot-kmeans-assumptions-py). 
- 
-#### **Content:** 
 
-**In [17]:**
+**In [1]:**
 
 {% highlight python linenos %}
 %matplotlib inline
@@ -55,7 +51,7 @@ X, y = make_blobs(n_samples=n_samples, random_state=random_state)
     Automatically created module for IPython interactive environment
 
 
-**In [8]:**
+**In [2]:**
 
 {% highlight python linenos %}
 # Incorrect number of clusters
@@ -78,7 +74,7 @@ plt.show()
 ![png](/assets/2017-08-13-plot-kmeans-assumptions_files/2017-08-13-plot-kmeans-assumptions_8_0.png) 
 
 
-**In [15]:**
+**In [3]:**
 
 {% highlight python linenos %}
 # Anisotropicly distributed data
@@ -103,7 +99,7 @@ plt.show()
 ![png](/assets/2017-08-13-plot-kmeans-assumptions_files/2017-08-13-plot-kmeans-assumptions_9_0.png) 
 
 
-**In [14]:**
+**In [4]:**
 
 {% highlight python linenos %}
 # Different variance
@@ -129,7 +125,7 @@ plt.show()
 ![png](/assets/2017-08-13-plot-kmeans-assumptions_files/2017-08-13-plot-kmeans-assumptions_10_0.png) 
 
 
-**In [13]:**
+**In [5]:**
 
 {% highlight python linenos %}
 # Unevenly sized blobs
@@ -155,3 +151,7 @@ plt.show()
 
  
 #### **Questions:** 
+ 
+#### **History:** 
+ 
+* <em>2017-08-13</em>: create post for demonstration of k-means assumption 
