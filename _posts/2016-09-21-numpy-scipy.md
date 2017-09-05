@@ -3,14 +3,11 @@ layout: post
 title: ubuntu16.04为python安装numpy,scipy模块
 date: 2016-09-21
 categories: python
-tags: python Tofinish 
+tags: programming 
 ---
-#### <strong>History:</strong>
-* <em>2016-09-15</em>:将内容记录下来<br>
-
-#### <strong>Background:</strong>
+#### <strong>Abstract:</strong>
 numpy和scipy是python的第三方模块，但是数学计算(ML)中很有用。
-由于不是内置的，使用前需要先安装。<br>
+由于不是内置的，使用前需要先安装，在16.04下装这些python模块简直不要太简单。<br>
 
 之前一直坚持使用的ubuntu10.04，由于更新库确实不能再用了，一咬牙直接更新到了16.04(目前最新版)。<br>
 使用新版的好处就是源多，而且都是基本最新的，在16.04下装这些python模块简直不要太简单。
@@ -31,3 +28,7 @@ numpy和scipy是python的第三方模块，但是数学计算(ML)中很有用。
 上面加`--upgrade`作用是在未安装时装最新版，已安装时升级到新版。<br>
 其它的模块也可以类似安装，pip会自动分析依赖并管理版本升级的问题。<br>
 把精力安心放到程序的学习上去吧!
+
+#### <strong>History:</strong>
+* <em>2016-09-15</em>:将内容记录下来<br>
+

@@ -2,21 +2,18 @@
 layout: post
 title:  centos7搭建访问外网VPN
 date: 2015-12-07
-categories:  折腾折腾
-tags: VPN CentOS7 阿里云 Tofinish
+categories:  trial&error
+tags: VPN
 ---
-#### <strong>History:</strong>
-* <em>2015-12-07</em>: 将内容尽量记录下来<br>
-* <em>2016-09-13</em>: 修改排版<br>
+#### <strong>Abstract:</strong>
+申明本文方法是在阿里云ECS上64位centos7搭建可用于访问外网的VPN。<br>
 
-#### <strong>Backgound:</strong>
+#### <strong>Content:</strong>
 首先说下在centos7上VPN服务器建立的背景，当时由于买了个阿里ECS，想着不能浪费了，就考虑该在上面折腾点啥，结果就想到了VPN，翻墙的厉器啊！<br>
 几经折腾，终于能通过阿里云服务器上网了，可是便宜的服务器是青岛的，还是墙不出去...<br>
 冷静之后转念一想，由于自己是移动的网（确实不稳定啊），想想没准用阿里来代理上国内网也能快点呢，当个游戏加速用。但发现自己还是天真了，连上阿里VPN后ping qq.com平均120ms以上、TTL＝50，不连VPN时只用平均70ms、TTL＝47。看来即使是强大的阿里做中转，绕远路还是比较慢啊。所以结果就是瞎折腾了！！ <br>
 好了，废话说了一堆，下面说说具体的搭建吧。
-申明本文方法是在阿里云ECS上64位centos7搭建可用于访问外网的VPN。
 
-#### <strong>Content:</strong>
 搭建环节：首先自然是网上搜现成的案例过程，翻不了google，百度一搜还真是一大把，但是基本内容都是一样的（各种互转啊，要找到点新内容就像海里捞针似的）。这里我也就直接转转啦，不过是我实际成功搭建VPN时操作的，还算可靠。<br> 
 VPN环境搭建流程同时参考了以下链接：<br>
 <http://www.wanghailin.cn/centos-7-vpn/> <br>
@@ -42,4 +39,8 @@ VPN环境搭建流程同时参考了以下链接：<br>
 如果还是代理上不了外网，可是直接SSH到服务器是可以访问外网的，说明仍旧配置有问题。<br>
 这里有一个很好的[帖子](http://bbs.aliyun.com/read/163732.html?spm=5176.bbsr163732.0.0.DU3Vqo)，里面总结了连网失败的解决办法。里面提到的iptables设置前要查看和清除旧规则很有用，因为规则是按顺序优先级检验的。
 真正解决了我的问题的是设置mtu的问题，要把VPN连接的mtu设置为1500，然后奇迹般地可以代理上网了，不过网速比想像中慢就是了。
+
+#### <strong>History:</strong>
+* <em>2015-12-07</em>: 将内容尽量记录下来<br>
+* <em>2016-09-13</em>: 修改排版<br>
 

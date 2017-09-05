@@ -2,14 +2,11 @@
 layout: post
 title: hadoop集群体验wordcount
 date: 2016-09-22
-categories: 折腾折腾
-tags: Hadoop Wordcount
+categories:  trial&error
+tags: hadoop
 ---
-#### <strong>History:</strong>
-* <em>2016-09-22</em>:将内容记录下来<br>
-
-#### <strong>Background:</strong>
-之前介绍了用PC机借助虚拟机搭建分布式hadoop，这篇介绍用它体验hadoop的操作。
+#### <strong>Abstract:</strong>
+之前介绍了用PC机借助虚拟机搭建分布式hadoop，这篇介绍用它体验hadoop的wordcount操作。<br>
 
 hadoop上最经典的入门案例就是wordcount了，经典到在hadoop2.5.2的安装包里默认装了wordcount的jar包。所以我们免除了写java文件的工作(有兴趣的话可以研究它的源码，从而模仿改写)，直接调用体验。
 
@@ -172,3 +169,7 @@ wordcount的java执行程序已经包含在hadoop安装路径下的share/hadoop/
 之后在NameNode上执行命令`hadoop namenode -format`重新格式化HDFS。
 
 之后用`start-all.sh`启动hadoop,它会默认把NameNode上的格式化HDFS也拷到其它DataNode上去。再从设置输入输出重头尝试。
+
+#### <strong>History:</strong>
+* <em>2016-09-22</em>:将内容记录下来<br>
+

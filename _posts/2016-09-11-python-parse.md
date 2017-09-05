@@ -3,19 +3,16 @@ layout: post
 title: python之parse参数 
 date: 2016-09-11
 categories:  python
-tags: python argparse lxml
+tags: programming
 ---
-#### <strong>History:</strong>
-* <em>2016-09-11</em>: 将内容记录下来<br>
-* <em>2016-11-06</em>: finish the coding(can't input Chinise now~~)<br>
-
-#### <strong>Backgound:</strong>
+#### <strong>Abstrac:</strong>
 This page try to describe the basic function of argparse, which handle the input argument well.<br>
+
 argparse is contained in python package. We can import it directly.<br>
 
-As it's quite simple and useful for coding, I just give a short example to show the most common usage.<br>
 
 #### <strong>Content:</strong>
+As it's quite simple and useful for coding, I just give a short example to show the most common usage.<br>
 
     import argparse as arg
     parser = arg.ArgumentParser(description='Calculate the exponent of given number, sample to practise argparse')
@@ -33,3 +30,8 @@ As it's quite simple and useful for coding, I just give a short example to show 
         print"the number {0} power {1} is {2}".format(list[0], list[1], answer)
     else:
         print(answer)
+
+#### <strong>History:</strong>
+* <em>2016-09-11</em>: 将内容记录下来<br>
+* <em>2016-11-06</em>: finish the coding(can't input Chinise now~~)<br>
+

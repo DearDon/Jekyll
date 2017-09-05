@@ -2,18 +2,15 @@
 layout: post
 title:  vim 插件安装(Vundle)
 date: 2016-09-11
-categories:  折腾折腾
-tags: Vim Vundle 
+categories:  trial&error
+tags: vim
 ---
-#### <strong>History:</strong>
-* <em>2016-09-11</em>: 将内容记录下来<br>
-* <em>2016-09-13</em>: 修改排版<br>
-
-#### <strong>Backgound:</strong>
+#### <strong>Abstract:</strong>
 Vim非常强大，其中一个重要原因是丰富的插件。为了高效管理插件，Vundle(Vim bundle)是不错的选择，它也是一个vim的插件，但它可以管理其他插件，所以装好它其它插件都so easy.<br>
-以下安装基于linux，参考自Vundle在github上的[项目说明](https://github.com/VundleVim/Vundle.vim)，原文写得很清楚，这里只是简单翻译。
 
 #### <strong>Content:</strong>
+以下安装基于linux，参考自Vundle在github上的[项目说明](https://github.com/VundleVim/Vundle.vim)，原文写得很清楚，这里只是简单翻译。
+
 1.建立Vundle:<br>
 
     $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
@@ -59,3 +56,8 @@ Vim非常强大，其中一个重要原因是丰富的插件。为了高效管�
 或在终端输入
 
     $ vim +PluginInstall +qall
+
+#### <strong>History:</strong>
+* <em>2016-09-11</em>: 将内容记录下来<br>
+* <em>2016-09-13</em>: 修改排版<br>
+

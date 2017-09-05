@@ -2,19 +2,17 @@
 layout: post
 title: hadoop分布式集群搭建
 date: 2016-09-17
-categories: 折腾折腾
-tags: Hadoop Tofinish
+categories:  trial&error
+tags: hadoop
 ---
-#### <strong>History:</strong>
-* <em>2016-09-17</em>:简单记录Hadoop的安装流程及遇到的问题<br>
-* <em>2016-09-20</em>:修正ip设置错误和部分描述<br>
-
-#### <strong>Background:</strong>
-Hadoop已经火了很久了，自己也对它也有好奇心挺久了，记得因为它自己才正式接触学习的java(mapreduce框架是基于Java的)。<br>
-看了一些资料后，为了更直观地体验一下hadoop的集群能力，决定在自己的pc上安装试一下。为了模拟真实的分布式环境，用VirtualBox装了３个ubuntu10.04的32位系统，并在该环境下装了hadoop-2.5.2。由于hadoop要求相对较新的java环境，因此安装了jdk1.7.0_79。<br>
-下面安装过程基于自己的实际经历，亲测有效，但其它环境无法保证。
+#### <strong>Abstract:</strong>
+用VirtualBox装了３个ubuntu10.04的32位系统，并在该环境下装了hadoop-2.5.2。<br>
 
 #### <strong>Content:</strong>
+Hadoop已经火了很久了，自己也对它也有好奇心挺久了，记得因为它自己才正式接触学习的java(mapreduce框架是基于Java的)。<br>
+看了一些资料后，为了更直观地体验一下hadoop的集群能力，决定在自己的pc上安装试一下。为了模拟真实的分布式环境，用VirtualBox装了３个ubuntu10.04的32位系统，并在该环境下装了hadoop-2.5.2。由于hadoop要求相对较新的java环境，因此安装了`jdk1.7.0_79`。<br>
+下面安装过程基于自己的实际经历，亲测有效，但其它环境无法保证。
+
 对分布式hadoop具体的安装可以从系统搭建，ssh,java,hadoop几方面分为４步：
 
 <strong>一.搭建用于安装hadoop的系统环境</strong><br>
@@ -256,3 +254,8 @@ slaves文件内容改为(若没有，则新建)
 5.继续留在hadoop用户环境下，并设置SHELL由默认的sh变为bash(不改会使tab补全，上下记录和命令提示符显示都有问题),可先用echo $SHELL看当前的SHELL值，然后使用sudo usermod -s /bin/bash hadoop改变其值，改完后，要注销用户并重登陆才能看到效果。
 
 至此，新建的hadoop用户和原始的用户功能基本一样了，可以用于搭建hadoop系统用。
+
+#### <strong>History:</strong>
+* <em>2016-09-17</em>:简单记录Hadoop的安装流程及遇到的问题<br>
+* <em>2016-09-20</em>:修正ip设置错误和部分描述<br>
+

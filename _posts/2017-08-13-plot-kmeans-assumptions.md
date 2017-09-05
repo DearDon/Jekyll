@@ -3,7 +3,7 @@ layout: post
 title: Plot Kmeans Assumptions
 date: 2017-08-13 
 categories: scikit-learn
-tags: machine-learning ;&nbsp; python 
+tags: machine-learning ;&nbsp; clustering 
  
 --- 
  

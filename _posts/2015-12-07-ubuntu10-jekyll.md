@@ -2,18 +2,12 @@
 layout: post
 title:  搭建jekyll写github page
 date: 2015-12-07
-categories: 折腾折腾 
-tags:  jekyll github ubuntu10.04 Tofinish
+categories:  trial&error
+tags:  jekyll
 ---
-#### <strong>History:</strong>
-* <em>2015-12-06</em>: 快速将内容记录了下来<br>
-* <em>2015-12-27</em>: 对格式和段落进行分划<br>
-* <em>2016-09-25</em>: add easy install in ubuntu16.04<br>
-
-#### <strong>Backgound:</strong>
+#### <strong>Abstract:</strong>
+在ubuntu10.04下搭建jekyll写github page，其它平台未尝试。
 内容参考的github官方的[说明](https://help.github.com/articles/using-jekyll-with-pages/)，比较可靠。<br> 
-本人在ubuntu10.04下搭建的，其它平台未尝试。
-
 
 #### <strong>Content:</strong>
 <strong>在ubuntu10.04下搭建的</strong>
@@ -44,3 +38,9 @@ tags:  jekyll github ubuntu10.04 Tofinish
     $ cd Blog
     $ jekyll serve
     # => Now browse to http://localhost:4000
+
+#### <strong>History:</strong>
+* <em>2015-12-06</em>: 快速将内容记录了下来<br>
+* <em>2015-12-27</em>: 对格式和段落进行分划<br>
+* <em>2016-09-25</em>: add easy install in ubuntu16.04<br>
+

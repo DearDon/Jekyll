@@ -3,13 +3,11 @@ layout: post
 title: multiprocess pool
 date: 2016-11-09
 categories: python
-tags: multiprocess pool
+tags: programming
 ---
-#### <strong>History:</strong>
-* <em>2016-11-09</em>:create the page<br>
+#### <strong>Abstract:</strong>
+This program is to test python process pool.<br>
 
-#### <strong>Background:</strong>
-This program is to test pool.<br>
 if no pool.join and result, you may not see all the output from subprocess<br>
 
 Be careful that the input functions for multiprocess pool can't be class method, no matter it's static or not.<br>
@@ -103,3 +101,7 @@ It's ok to call other process in the normal funtion.
             for res in result:
                 print res.get()
             print "Sub-process(es) done."
+
+#### <strong>History:</strong>
+* <em>2016-11-09</em>:create the page<br>
+

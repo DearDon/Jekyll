@@ -3,15 +3,12 @@ layout: post
 title: Python copy file or folder
 date: 2016-12-11
 categories: python
-tags: shutil copy
+tags: programming
 ---
-#### <strong>History:</strong>
-* <em>2016-12-11</em>:create the page<br>
-
-#### <strong>Background:</strong>
+#### <strong>Abstract:</strong>
 To copy a file or dir is useful, python provide it by shutil, there are functions copyfile, copy, copymode, copy2, copytree. 
 
-This pages note the differences between them.
+This pages note the differences between them.<br>
 
 #### <strong>Content:</strong>
     
@@ -60,4 +57,6 @@ def foo
 end
 {% endhighlight %}
 
+#### <strong>History:</strong>
+* <em>2016-12-11</em>:create the page<br>
 

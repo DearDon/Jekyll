@@ -2,7 +2,7 @@
 layout: post
 title: Highlight Code In Jekyll
 date: 2017-08-12 
-categories: trial
+categories:  trial&error
 tags: jekyll 
  
 --- 
