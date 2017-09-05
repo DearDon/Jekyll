@@ -9,7 +9,7 @@ future: false
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'manage.sh']
 
 excerpt_separator: "<br>"
-paginate: 5
+paginate: 10
 paginate_path: "page:num"
 # permalink: /:categories/:title.html
 # relative_permalinks: true
