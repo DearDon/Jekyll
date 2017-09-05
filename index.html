@@ -31,36 +31,24 @@ title: "首页：Home"
 {% endfor %}
 
 <!-- Pager indicator -->
-{% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
     <li class="previous">
-    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+    <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Previous</a>
     </li>
   {% else %}
     <li class="previous">
-    <span>&laquo; Prev</span>
+    <span class="previous">&larr; Previous</span>
     </li>
   {% endif %}
-
-  {% for page in (1..paginator.total_pages) %}
-    {% if page == paginator.page %}
-      <em>{{ page }}</em>
-    {% elsif page == 1 %}
-      <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
-    {% else %}
-      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-    {% endif %}
-  {% endfor %}
-
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
     <li class="next">
-    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+    <a href="{{ paginator.next_page_path }}" class="next">Next &rarr;</a>
     </li>
   {% else %}
     <li class="next">
-    <span>Next &raquo;</span>
+    <span class="next ">Next &rarr;</span>
     </li>
   {% endif %}
 </div>
-{% endif %}
