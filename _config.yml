@@ -11,8 +11,8 @@ exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'manage.sh']
 excerpt_separator: "<br>"
 paginate: 5
 paginate_path: "page:num"
-permalink: /:categories/:title.html
-relative_permalinks: true
+# permalink: /:categories/:title.html
+# relative_permalinks: true
 
 plugins:
   - jekyll-paginate
