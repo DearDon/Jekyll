@@ -3,6 +3,7 @@ kramdown:
     input: GFM
 highlighter: rouge
 permalink: /:categories/:title.html
+relative_permalinks: true
 url: www.deardon.win
 lsi: false
 safe: true
