@@ -38,17 +38,17 @@ title: "首页：Home"
     </li>
   {% else %}
     <li class="previous">
-	&larr; Previous
+    <span>&larr; Previous</span>
     </li>
   {% endif %}
   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
     <li class="next">
-    <a href="{{ paginator.next_page_path }}" class="next">Next &rarr;</a>
+    <a href="{{ paginator.next_page_path }}">Next &rarr;</a>
     </li>
   {% else %}
     <li class="next">
-    <span class="next ">Next &rarr;</span>
+    <span>Next &rarr;</span>
     </li>
   {% endif %}
 </ul>
