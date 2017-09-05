@@ -31,7 +31,7 @@ title: "首页：Home"
 {% endfor %}
 
 <!-- Pager indicator -->
-<div class="pagination">
+<ul class="pager">
   {% if paginator.previous_page %}
     <li class="previous">
     <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Previous</a>
@@ -51,4 +51,4 @@ title: "首页：Home"
     <span class="next ">Next &rarr;</span>
     </li>
   {% endif %}
-</div>
+</ul>
