@@ -34,10 +34,12 @@ title: "首页：Home"
 <ul class="pager">
   {% if paginator.previous_page %}
     <li class="previous">
-    <a href="{{ paginator.previous_page_path }}" class="previous">&larr; Previous</a>
+    <a href="{{ paginator.previous_page_path }}">&larr; Previous</a>
     </li>
   {% else %}
-    <span class="previous">&larr; Previous</span>
+    <li class="previous">
+	&larr; Previous
+    </li>
   {% endif %}
   <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
   {% if paginator.next_page %}
