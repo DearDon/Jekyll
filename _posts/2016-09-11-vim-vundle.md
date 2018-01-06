@@ -53,11 +53,22 @@ Vim非常强大，其中一个重要原因是丰富的插件。为了高效管�
 打开vim输入
 
     :PluginInstall
+
 或在终端输入
 
     $ vim +PluginInstall +qall
 
+4.update插件:<br>
+打开vim输入
+
+    :PluginUpdate
+
+或在终端输入
+
+    $ vim +PluginUpdate +qall
+
 #### <strong>History:</strong>
 * <em>2016-09-11</em>: 将内容记录下来<br>
 * <em>2016-09-13</em>: 修改排版<br>
+* <em>2018-01-06</em>: add update plugin<br>
 
