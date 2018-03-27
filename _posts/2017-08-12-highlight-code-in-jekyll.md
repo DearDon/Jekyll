@@ -25,7 +25,7 @@ According to <https://sacha.me/articles/jekyll-rouge/>, the easiest way to use
 Rouge is using the kramdown markdown parser. They recently added native support
 for Rouge and Jekyll has been supporting kramdown for a while now.<br> 
  
-##### 1.Install 
+##### **1.Install **
  
 First, make sure you’re using a recent version of Jekyll (for example 2.5.0).
 You can check your installed version using `jekyll -v`. 
