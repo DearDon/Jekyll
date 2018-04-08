@@ -36,5 +36,5 @@ available command: `shutil.copytree folder folder`
 
 
 ### History:
-1 <em>2016-12-11</em>:create the page<br>
+* <em>2016-12-11</em>:create the page<br>
 
