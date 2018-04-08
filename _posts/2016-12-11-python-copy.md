@@ -25,7 +25,7 @@ available command: `shutil.copy2 file file|folder`
 
 * `copymode`, it only copy mode, exclude file content.
 the dst file/folder must exist.
-available command: `shutil.copy2 file|folder file|folder`
+available command: `shutil.copymode file|folder file|folder`
 
 * `copytree`, it can cp folder to folder
 the dst file/folder must not exist.
