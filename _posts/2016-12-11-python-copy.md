@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Python copy file or folder
+title: python copy file or folder
 date: 2016-12-11
 categories: python
 tags: programming
