@@ -7,12 +7,11 @@ tags: programming
 ---
 #### <strong>Abstract:</strong>
 To copy a file or dir is useful, python provide it by shutil, there are functions copyfile, copy, copymode, copy2, copytree. 
-
 This pages note the differences between them.<br>
 
 #### <strong>Content:</strong>
 
-#### copy API in python:
+##### **copy API in python:**
 * `copyfile`, it cp file to file, the dst must also be a file(not folder).
 If there already a file with same name in dst, it will be coverd.
 Available command: `shutil.copyfile file file`
@@ -32,8 +31,8 @@ available command: `shutil.copy2 file|folder file|folder`
 the dst file/folder must not exist.
 available command: `shutil.copytree folder folder`
 
-#### code example:
-<script src="https://gist.github.com/DearDon/02a2a88639a8659a8905e21cb6615a5e.js" data-file="python-copy".py></script>
+##### **code example:**
+<script src="https://gist.github.com/DearDon/02a2a88639a8659a8905e21cb6615a5e.js" data-file="python-copy.py"></script>
 
 
 #### <strong>History:</strong>
