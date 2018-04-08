@@ -1,6 +1,6 @@
 ---
 layout: post
-title: multiprocess pool
+title: python multiprocess pool
 date: 2016-11-09
 categories: python
 tags: programming
