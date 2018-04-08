@@ -32,7 +32,7 @@ the dst file/folder must not exist.
 available command: `shutil.copytree folder folder`
 
 #### code example:
-<script src="https://gist.github.com/DearDon/02a2a88639a8659a8905e21cb6615a5e.js"></script>
+<script src="https://gist.github.com/DearDon/02a2a88639a8659a8905e21cb6615a5e.js?file=python-copy.py"></script>
 
 
 ### History:
