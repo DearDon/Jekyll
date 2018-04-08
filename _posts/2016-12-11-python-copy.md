@@ -5,7 +5,7 @@ date: 2016-12-11
 categories: python
 tags: programming
 ---
-#### <strong>Abstract:</strong>
+### <strong>Abstract:</strong>
 To copy a file or dir is useful, python provide it by shutil, there are functions copyfile, copy, copymode, copy2, copytree. 
 This pages note the differences between them.<br>
 
