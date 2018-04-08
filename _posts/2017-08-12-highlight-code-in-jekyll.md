@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Highlight Code In Jekyll
+title: highlight Code In Jekyll
 date: 2017-08-12 
 categories:  trial&error
 tags: jekyll 
  
 --- 
  
-#### **Abstract:** 
+### Abstract:
  
 I demostrate how I highlight the code in my `jekyll v3.*` post by rouge.<br> 
  
-#### **Content:** 
+### Content:
  
 Code is the most usual block we record for a technical blog. However code
 without good highlight and format is a mess for reading. 
@@ -25,7 +25,7 @@ According to <https://sacha.me/articles/jekyll-rouge/>, the easiest way to use
 Rouge is using the kramdown markdown parser. They recently added native support
 for Rouge and Jekyll has been supporting kramdown for a while now.<br> 
  
-##### 1.Install
+#### 1. Install
  
 First, make sure you’re using a recent version of Jekyll (for example 2.5.0).
 You can check your installed version using `jekyll -v`. 
@@ -41,9 +41,9 @@ within your Jekyll setup.<br>
 By the way, if, like me, you’re always getting errors doing anything with Rouge,
 remember it’s called Rouge, not Rogue. 
  
-##### 2.Setting 
+#### 2. Setting 
  
-###### setting in _config.yml 
+##### setting in _config.yml 
  
 As with all options concerning your builds, the place to add them is in your
 `_config.yml`. 
@@ -77,7 +77,7 @@ by adding this line to your _config.yml:
  
 Or you can use linenos to set line for each block. We'll show an example later. 
  
-###### generate css style file 
+##### generate css style file 
  
 You need to use a css file to manage your syntax style for jekyll page. <br>
 To generate such syntax.css file, you need choose a style. You can get all
@@ -97,7 +97,7 @@ Add css file setting to you layout file _layouts/default.html:
  
 Now, all setting's done!!! 
  
-##### Usage 
+#### Usage 
  
 With Rouge, you won’t need Python installed locally to work on your Jekyll site.
 It is fully written in Ruby. It also provides full backtick support for
@@ -133,9 +133,9 @@ with the standard highlight markup:
 {% endraw %} 
 Note that both highlight and backticks are fully supported by Rouge. 
  
-#### **Questions:** 
+### Questions:
  
-##### 1.code highlight without color 
+#### 1. code highlight without color 
  
 I've encounted a problem that highlight just didn't work after all setting and
 installation are done.It turn out to be a quite easy issue. Just lack of css
@@ -144,7 +144,7 @@ So if you have the same problem, just generate the css file for your page.
  
 Please get details from the post for generate syntax.css file!! 
  
-#### **History:** 
+### History:
  
 * <em>2017-08-12</em>: create post for recording how to highlight code syntax in
 jekyll post by rouge, including install, setting and usage. 
