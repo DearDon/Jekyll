@@ -3,7 +3,7 @@ layout: post
 title: "Hello, World!"
 date: 2015-12-06
 categories:  trial&error
-tags: jekyll
+tags: service
 ---
 我来了，博客君!
 
