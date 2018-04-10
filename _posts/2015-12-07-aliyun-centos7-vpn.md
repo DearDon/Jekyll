@@ -3,7 +3,7 @@ layout: post
 title:  Centos7搭建访问外网VPN
 date: 2015-12-07
 categories:  trial&error
-tags: VPN
+tags: service
 ---
 
 ### Abstract:
