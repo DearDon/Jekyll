@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Highlight Code in service
+title: Highlight Code in Jekyll
 date: 2017-08-12 
-categories:  trial&error
-tags: jekyll  
+categories: trial&error
+tags: service
 --- 
  
 ### Abstract:
