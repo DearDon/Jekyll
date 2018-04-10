@@ -1,17 +1,16 @@
 ---
 layout: post
-title: python之parse参数 
+title: Python Parse Console Input 
 date: 2016-09-11
 categories:  python
 tags: programming
 ---
-#### <strong>Abstrac:</strong>
-This page try to describe the basic function of argparse, which handle the input argument well.<br>
 
-argparse is contained in python package. We can import it directly.<br>
+### Abstrac:
+This page try to describe the basic function of argparse, which handle the input argument well.
+argparse is included in python package. We can import it directly.<br>
 
-
-#### <strong>Content:</strong>
+### Content:
 As it's quite simple and useful for coding, I just give a short example to show the most common usage.<br>
 
     import argparse as arg
@@ -31,7 +30,7 @@ As it's quite simple and useful for coding, I just give a short example to show 
     else:
         print(answer)
 
-#### <strong>History:</strong>
+### History:
 * <em>2016-09-11</em>: 将内容记录下来<br>
 * <em>2016-11-06</em>: finish the coding(can't input Chinise now~~)<br>
 
