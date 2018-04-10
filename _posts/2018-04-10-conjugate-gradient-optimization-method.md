@@ -7,6 +7,7 @@ tags: machine-learning ;&nbsp; fortran
  
 --- 
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 ### Abstract: 
 Conjugate gradient method is one of the improved gradient algorithms for optimization. 
 It's used to resolve linear system, which need to meet some strict requirements.
@@ -33,3 +34,4 @@ But there are some improvement that try to appply conjugate gradient to non-line
  
 ### History: 
 * <em>2018-04-10</em>: create post for demonstration of conjugate gradient method 
+
