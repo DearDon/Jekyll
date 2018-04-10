@@ -1,11 +1,11 @@
 ---
 layout: post
-title: python multiprocess pool
+title: Python Multiprocess Pool
 date: 2016-11-09
 categories: python
 tags: programming
 ---
-#### <strong>Abstract:</strong>
+### Abstract:
 This program is to test python process pool.<br>
 
 if no pool.join and result, you may not see all the output from subprocess<br>
@@ -16,7 +16,7 @@ Lambda expression that represent a function is also invalid.<br>
 The expected input funtions should be normal funtion(outside of class).<br>
 It's ok to call other process in the normal funtion.
 
-#### <strong>Content:</strong>
+### Content:
 
     import multiprocessing
     import time
@@ -102,6 +102,6 @@ It's ok to call other process in the normal funtion.
                 print res.get()
             print "Sub-process(es) done."
 
-#### <strong>History:</strong>
+### History:
 * <em>2016-11-09</em>:create the page<br>
 
