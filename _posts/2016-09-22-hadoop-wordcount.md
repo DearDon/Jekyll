@@ -3,7 +3,7 @@ layout: post
 title: Hadoop集群体验wordcount
 date: 2016-09-22
 categories: hadoop
-tags: data-processing
+tags: data-science
 ---
 ### Abstract:
 之前介绍了用PC机借助虚拟机搭建分布式hadoop，这篇介绍用它体验hadoop的wordcount操作。<br>
