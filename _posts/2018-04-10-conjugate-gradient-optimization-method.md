@@ -15,10 +15,14 @@ Though it's not a general solution for optimization problem, but it's quite **ef
 ### Content:
 
 #### Theory:
+$$ A=A^T $$
 <script src="https://gist.github.com/DearDon/c1a6a101e129a2afee71d31d6a4a2dfa.js?file=conjugate_gradient_theory.md"></script>
 
 #### Numerical implemetation in Fortran:
-<script src="https://gist.github.com/DearDon/c1a6a101e129a2afee71d31d6a4a2dfa.js?file=conjugate_gradient_method.md"></script>
+##### Fortran subroutine for conjugate gradient:
+<script src="https://gist.github.com/DearDon/c1a6a101e129a2afee71d31d6a4a2dfa.js?file=conjugate_gradient_method.f90"></script>
+##### Conjugate gradient application:
+<script src="https://gist.github.com/DearDon/c1a6a101e129a2afee71d31d6a4a2dfa.js?file=conjugate_gradient_example.f90"></script>
 
 ### Questions:
 #### Is it adapt to deeplearning issue?
