@@ -1,10 +1,9 @@
 ---
 layout: post
-title: highlight Code In Jekyll
+title: Highlight Code in Jekyll
 date: 2017-08-12 
 categories:  trial&error
-tags: jekyll 
- 
+tags: jekyll  
 --- 
  
 ### Abstract:
@@ -43,7 +42,7 @@ remember it’s called Rouge, not Rogue.
  
 #### 2. Setting 
  
-##### setting in _config.yml 
+##### 2.1. setting in _config.yml 
  
 As with all options concerning your builds, the place to add them is in your
 `_config.yml`. 
@@ -77,7 +76,7 @@ by adding this line to your _config.yml:
  
 Or you can use linenos to set line for each block. We'll show an example later. 
  
-##### generate css style file 
+##### 2.2. generate css style file 
  
 You need to use a css file to manage your syntax style for jekyll page. <br>
 To generate such syntax.css file, you need choose a style. You can get all
@@ -97,7 +96,7 @@ Add css file setting to you layout file _layouts/default.html:
  
 Now, all setting's done!!! 
  
-#### Usage 
+#### 3. Usage 
  
 With Rouge, you won’t need Python installed locally to work on your Jekyll site.
 It is fully written in Ruby. It also provides full backtick support for
