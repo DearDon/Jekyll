@@ -1,6 +1,6 @@
 ---
 layout: post
-title: python copy file or folder
+title: Python Copy File or Folder
 date: 2016-12-11
 categories: python
 tags: programming
@@ -11,7 +11,7 @@ This pages note the differences between them.<br>
 
 ### Content:
 
-#### copy API in python:
+#### 1. copy API in python:
 * `copyfile`, it cp file to file, the dst must also be a file(not folder).
 If there already a file with same name in dst, it will be coverd.
 Available command: `shutil.copyfile file file`
@@ -31,7 +31,7 @@ available command: `shutil.copymode file|folder file|folder`
 the dst file/folder must not exist.
 available command: `shutil.copytree folder folder`
 
-#### code example:
+#### 2. code example:
 <script src="https://gist.github.com/DearDon/02a2a88639a8659a8905e21cb6615a5e.js?file=python-copy.py"></script>
 
 
