@@ -3,17 +3,15 @@ layout: post
 title: Plot Kmeans Assumptions
 date: 2017-08-13 
 categories: scikit-learn
-tags: machine-learning ;&nbsp; clustering 
+tags: machine-learning ; clustering 
  
 --- 
  
-#### **Abstract:** 
- 
+### Abstract:
 This example is meant to illustrate situations where k-means will produce
 `unintuitive` and `possibly unexpected` clusters.<br> 
  
-#### **Content:** 
- 
+### Content:  
 In the first three row plots, the input data does not conform to some implicit
 assumption that k-means makes and
 undesirable clusters are produced as a result. In the last plot, k-means returns
@@ -150,8 +148,7 @@ plt.show()
 ![png](/assets/2017-08-13-plot-kmeans-assumptions_files/2017-08-13-plot-kmeans-assumptions_11_0.png) 
 
  
-#### **Questions:** 
+### Questions: 
  
-#### **History:** 
- 
+### History: 
 * <em>2017-08-13</em>: create post for demonstration of k-means assumption 
