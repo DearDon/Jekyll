@@ -3,7 +3,7 @@ layout: post
 title:  vim 插件安装(Vundle)
 date: 2016-09-11
 categories:  trial&error
-tags: vim
+tags: tool
 ---
 ### Abstract:
 Vim非常强大，其中一个重要原因是丰富的插件。为了高效管理插件，Vundle(Vim bundle)是不错的选择，它也是一个vim的插件，但它可以管理其他插件，所以装好它其它插件都so easy.<br>
