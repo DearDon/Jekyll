@@ -3,7 +3,7 @@ layout: post
 title: Ubuntu16.04为python安装numpy,scipy模块
 date: 2016-09-21
 categories: trial&error 
-tags: python
+tags: data-science
 ---
 ### Abstract:
 numpy和scipy是python的第三方模块，但是数学计算(ML)中很有用。
