@@ -15,7 +15,6 @@ Though it's not a general solution for optimization problem, but it's quite **ef
 ### Content:
 
 #### Theory:
-$$ A=A^T $$
 <script src="https://gist.github.com/DearDon/c1a6a101e129a2afee71d31d6a4a2dfa.js?file=conjugate_gradient_theory.md"></script>
 
 #### Numerical implemetation in Fortran:
@@ -30,7 +29,7 @@ $$ A=A^T $$
 Wince deeplearning is non-linear structure, muchless the extra requrements, so the original conjugate gradient method is **not suitable** for deeplearning.
 But there are some improvement that try to appply conjugate gradient to non-linear problem, but it may need more adjustments and tests to check if it could help on deeplearning training.
 #### Is the error scale for measuring if training converge sensitive?
-**Yes**. the error variable e in the code, which decide if loop converge, is quite sensitive. My own test shows set e=0.001 to e=1e-6 sometimes could improve much for the solution precision.
+**Yes**. the error variable e in the code, which decide if loop converge, is quite sensitive. My own test case shows change $e=0.001$ to $e=1e-6$ could improve very much for the solution precision.
  
 ### History: 
 * <em>2018-04-10</em>: create post for demonstration of conjugate gradient method 
