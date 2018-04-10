@@ -25,7 +25,7 @@ Though it's not a general solution for optimization problem, but it's quite **ef
 
 ### Questions:
 #### Is it adapt to deeplearning issue?
-**No**. As we address above, it's adapted to linear system with extra requirements(symmetric and positive-definite) to coefficients matrix $A$. 
+**No**. As we address above, it's adapted to linear system with extra requirements(symmetric and positive-definite) to coefficients matrix \(A\). 
 Wince deeplearning is non-linear structure, muchless the extra requrements, so the original conjugate gradient method is **not suitable** for deeplearning.
 But there are some improvement that try to appply conjugate gradient to non-linear problem, but it may need more adjustments and tests to check if it could help on deeplearning training.
 #### Is the error scale for measuring if training converge sensitive?
