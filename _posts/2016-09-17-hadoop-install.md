@@ -3,7 +3,7 @@ layout: post
 title: Hadoop分布式集群搭建
 date: 2016-09-17
 categories:  hadoop
-tags: data-processing
+tags: data-science
 ---
 ### Abstract:
 用VirtualBox装了３个ubuntu10.04的32位系统，并在该环境下装了hadoop-2.5.2。<br>
