@@ -1,11 +1,11 @@
 ---
 layout: post
-title: hadoop集群体验wordcount
+title: Hadoop集群体验wordcount
 date: 2016-09-22
-categories:  trial&error
-tags: hadoop
+categories: hadoop
+tags: data-processing
 ---
-#### <strong>Abstract:</strong>
+### Abstract:
 之前介绍了用PC机借助虚拟机搭建分布式hadoop，这篇介绍用它体验hadoop的wordcount操作。<br>
 
 hadoop上最经典的入门案例就是wordcount了，经典到在hadoop2.5.2的安装包里默认装了wordcount的jar包。所以我们免除了写java文件的工作(有兴趣的话可以研究它的源码，从而模仿改写)，直接调用体验。
@@ -13,8 +13,8 @@ hadoop上最经典的入门案例就是wordcount了，经典到在hadoop2.5.2的
 不过由于是在单机上虚拟出来的分布式环境，其实硬件资源跑三个虚拟机已经够呛了，所以hadoop的威力体现并不明显，wordcount跑了不少时间。<br>
 但至少成功体验了跑一遍job，对hadoop感受更直接了。
 
-#### <strong>Content:</strong>
-<strong>一.为wordcount任务设定好输入输出</strong><br>
+### Content:
+#### 1. 为wordcount任务设定好输入输出
 记得hadoop的所有操作都要在启动hadoop后呀，且正常情况下操作均只在master上(出异常时可能要去slave上检查，如本文后面删除各节点上有问题的dfs)。
 
     $ start-all.sh #启动hadoop
@@ -55,7 +55,7 @@ hadoop上最经典的入门案例就是wordcount了，经典到在hadoop2.5.2的
     hello slave2
     master slave
 
-<strong>二.执行wordcount任务</strong><br>
+#### 2. 执行wordcount任务
 完成了前面的输入文件准备后，就可以提交任务了。
 
 wordcount的java执行程序已经包含在hadoop安装路径下的share/hadoop/mapreduce/hadoop-mapreduce-examples-2.5.2.jar中，因此可直接执行。
@@ -135,7 +135,7 @@ wordcount的java执行程序已经包含在hadoop安装路径下的share/hadoop/
 
 至此，任务执行完毕，从输出可以看到map确实花了不少时间(老pc机嘛)。
 
-<strong>三.查看wordcount任务结果</strong><br>
+#### 3. 查看wordcount任务结果
 可以直接查看存在hdfs中count的结果，先看结果文件。
 
     $ hadoop fs -ls /output/wordcount
@@ -156,8 +156,8 @@ wordcount的java执行程序已经包含在hadoop安装路径下的share/hadoop/
 
 可见，正确统计了各单词及数量。
 
-#### <strong>Questions:</strong>
-在提交任务时，输入下面命令后可能会abort掉。
+### Questions:
+#### 1. 在提交任务时，输入下面命令后可能会abort掉。
 
     hadoop jar /home/hadoop/hadoop-2.5.2/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.5.2.jar wordcount /input/wordcount /output/wordcount
 
@@ -170,6 +170,6 @@ wordcount的java执行程序已经包含在hadoop安装路径下的share/hadoop/
 
 之后用`start-all.sh`启动hadoop,它会默认把NameNode上的格式化HDFS也拷到其它DataNode上去。再从设置输入输出重头尝试。
 
-#### <strong>History:</strong>
+### History:
 * <em>2016-09-22</em>:将内容记录下来<br>
 
