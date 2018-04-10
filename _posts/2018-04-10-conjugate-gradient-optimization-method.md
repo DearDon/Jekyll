@@ -3,7 +3,7 @@ layout: post
 title: Conjugate Gradient Method
 date: 2018-04-10 
 categories: optimization
-tags: fortran 
+tags: data-science 
 --- 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
