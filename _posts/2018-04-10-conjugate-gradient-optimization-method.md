@@ -5,7 +5,6 @@ date: 2018-04-10
 categories: optimization
 tags: machine-learning ;&nbsp; fortran 
 --- 
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 ### Abstract: 
@@ -30,7 +29,7 @@ Though it's not a general solution for optimization problem, but it's quite **ef
 Wince deeplearning is non-linear structure, muchless the extra requrements, so the original conjugate gradient method is **not suitable** for deeplearning.
 But there are some improvement that try to appply conjugate gradient to non-linear problem, but it may need more adjustments and tests to check if it could help on deeplearning training.
 #### Is the error scale for measuring if training converge sensitive?
-**Yes**. the error variable e in the code, which decide if loop converge, is quite sensitive. My own test case shows change $e=0.001$ to $e=1e-6$ could improve very much for the solution precision.
+**Yes**. the error variable e in the code, which decide if loop converge, is quite sensitive. My own test case shows change \(e=0.001\) to \(e=1e-6\) could improve very much for the solution precision.
  
 ### History: 
 * <em>2018-04-10</em>: create post for demonstration of conjugate gradient method 
