@@ -3,7 +3,7 @@ layout: post
 title:  搭建jekyll写github page
 date: 2015-12-07
 categories:  trial&error
-tags:  jekyll
+tags:  service
 ---
 
 ### Abstract:
