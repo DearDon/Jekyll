@@ -1,12 +1,12 @@
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 ---
 layout: post
 title: conjugate gradient method
 date: 2018-04-10 
 categories: optimization
 tags: machine-learning ;&nbsp; fortran 
- 
 --- 
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 ### Abstract: 
 Conjugate gradient method is one of the improved gradient algorithms for optimization. 
