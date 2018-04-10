@@ -1,6 +1,6 @@
 ---
 layout: post
-title: conjugate gradient method
+title: Conjugate Gradient Method
 date: 2018-04-10 
 categories: optimization
 tags: machine-learning ;&nbsp; fortran 
@@ -22,10 +22,10 @@ Though it's not a general solution for optimization problem, but it's quite **ef
 
 ### Content:
 
-#### Theory:
+#### 1. Theory:
 <script src="https://gist.github.com/DearDon/c1a6a101e129a2afee71d31d6a4a2dfa.js?file=conjugate_gradient_theory.md"></script>
 
-#### Numerical implemetation in Fortran:
+#### 3. Numerical implemetation in Fortran:
 ##### Fortran subroutine for conjugate gradient:
 <script src="https://gist.github.com/DearDon/c1a6a101e129a2afee71d31d6a4a2dfa.js?file=conjugate_gradient_method.f90"></script>
 ##### Conjugate gradient application:
