@@ -15,6 +15,9 @@ date: {{resources['metadata']['name'][0:10]}}
 {% endblock in_prompt %}
 
 
+{% block output %}
+**Out :**
+{% endblock out_prompt %}
 
 {% block input %}
 {{ '{% highlight python linenos %}' }}
