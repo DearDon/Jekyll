@@ -3,14 +3,15 @@ layout: post
 title:  搭建jekyll写github page
 date: 2015-12-07
 categories:  trial&error
-tags:  jekyll
+tags:  service
 ---
-#### <strong>Abstract:</strong>
+
+### Abstract:
 在ubuntu10.04下搭建jekyll写github page，其它平台未尝试。
 内容参考的github官方的[说明](https://help.github.com/articles/using-jekyll-with-pages/)，比较可靠。<br> 
 
-#### <strong>Content:</strong>
-<strong>在ubuntu10.04下搭建的</strong>
+### Content:
+#### 1. 在ubuntu10.04下搭建的
 
 由于jekyll基于ruby，所以主要分为3步，安装ruby,bundler和jekyll。ruby是jekyll的语言环境，自不用多说，而bundler是为了以后的更新安装方便用的，严格来说，不装也是可以的，但是为了安装包的管理更新方便，强烈建议安装，这样才能方便地保证github后台的jekyll更新时能及时在本地跟上，使本地编写的与github上看到的页面效果一致（更新可是很频繁的喔）。<br>
 其实安装流程都是很明确的，主要问题在于版本，现在Ubuntu14.XX都早出来了，自己还守旧地用着停止更新支持的10.04。导致apt-get安装的程序都是很旧或是根本找不到软件包的，比如ruby就安装到1.8，而github里明确要求至少2.0。于是自己在apt-add了一个reposity，安装了2.0的ruby。而后就是bundler，用gem安装bundler时，发现国内不能连到默认的https://rubygems.org服务器，而替换为了可访问的https://ruby.tao.org。最后用bundler安装Jekyll也要设置该国内可访问的资源地址。
@@ -18,7 +19,7 @@ tags:  jekyll
 
 不早了，今天写到这，把主要问题和内容都写了，下次再细细整理内容和排版吧。
 
-<strong>在ubuntu16.04下搭建的</strong>
+#### 2. 在ubuntu16.04下搭建的
 
     #check version need new than 2.0
     ruby --version 
@@ -39,7 +40,7 @@ tags:  jekyll
     $ jekyll serve
     # => Now browse to http://localhost:4000
 
-#### <strong>History:</strong>
+### History:
 * <em>2015-12-06</em>: 快速将内容记录了下来<br>
 * <em>2015-12-27</em>: 对格式和段落进行分划<br>
 * <em>2016-09-25</em>: add easy install in ubuntu16.04<br>

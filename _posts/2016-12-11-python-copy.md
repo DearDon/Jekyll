@@ -1,62 +1,40 @@
 ---
 layout: post
-title: Python copy file or folder
+title: Python Copy File or Folder
 date: 2016-12-11
 categories: python
 tags: programming
 ---
-#### <strong>Abstract:</strong>
+### Abstract:
 To copy a file or dir is useful, python provide it by shutil, there are functions copyfile, copy, copymode, copy2, copytree. 
-
 This pages note the differences between them.<br>
 
-#### <strong>Content:</strong>
+### Content:
+
+#### 1. copy API in python:
+* `copyfile`, it cp file to file, the dst must also be a file(not folder).
+If there already a file with same name in dst, it will be coverd.
+Available command: `shutil.copyfile file file`
+
+* `copy`, it cp file to file/folder, the mode/createtime will be new.
+If there already a file with same name in dst, it will be coverd.
+Available command: `shutil.copy file file|folder`
     
-copyfile, it cp file to file, the dst must also be a file(not folder)<br>
-If there already a file with same name in dst, it will be coverd.<br>
-available command: shutil.copyfile file file
+* `copy2`, similar to copy, but it also cp the mode/createtime from src.
+available command: `shutil.copy2 file file|folder`
 
-copy, it cp file to file/folder, the mode/createtime will be new.<br>
-If there already a file with same name in dst, it will be coverd.<br>
-available command: shutil.copy file file|folder
-    
-copy2, similar to copy, but it also cp the mode/createtime from src.<br>
-available command: shutil.copy2 file file|folder
+* `copymode`, it only copy mode, exclude file content.
+the dst file/folder must exist.
+available command: `shutil.copymode file|folder file|folder`
 
-copymode, it only copy mode, exclude file content.<br>
-the dst file/folder must exist.<br>
-available command: shutil.copy2 file|folder file|folder
+* `copytree`, it can cp folder to folder
+the dst file/folder must not exist.
+available command: `shutil.copytree folder folder`
 
-copytree, it can cp folder to folder<br>
-the dst file/folder must not exist.<br>
-available command: shutil.copytree folder folder
-
-{% highlight python linenos %}
-import shutil
-
-def main():
-    srcfolder='./folder/SRC'
-    src='./folder/SRC/a'
-    dst='./folder/DST/a'
-    dstfolder='./folder/DST/'
-    # shutil.copy(src, dstfolder)
-    # shutil.copy2(src, dst)
-    # shutil.copyfile(src, dst)
-    shutil.copytree(srcfolder, dstfolder)
-    # shutil.copymode(srcfolder, dstfolder)
-
-if __name__ == '__main__':
-    main()
-{% endhighlight %}
+#### 2. code example:
+<script src="https://gist.github.com/DearDon/02a2a88639a8659a8905e21cb6615a5e.js?file=python-copy.py"></script>
 
 
-
-{% highlight ruby linenos %}
-def foo
-  puts 'foo'
-end
-{% endhighlight %}
-
-#### <strong>History:</strong>
+### History:
 * <em>2016-12-11</em>:create the page<br>
-
+* <em>2018-04-08</em>:reformat the page with md title and gist for code snippet<br>

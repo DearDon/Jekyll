@@ -3,19 +3,19 @@ layout: post
 title:  vim 插件安装(Vundle)
 date: 2016-09-11
 categories:  trial&error
-tags: vim
+tags: tool
 ---
-#### <strong>Abstract:</strong>
+### Abstract:
 Vim非常强大，其中一个重要原因是丰富的插件。为了高效管理插件，Vundle(Vim bundle)是不错的选择，它也是一个vim的插件，但它可以管理其他插件，所以装好它其它插件都so easy.<br>
 
-#### <strong>Content:</strong>
+### Content:
 以下安装基于linux，参考自Vundle在github上的[项目说明](https://github.com/VundleVim/Vundle.vim)，原文写得很清楚，这里只是简单翻译。
 
-1.建立Vundle:<br>
+#### 1. 建立Vundle:
 
     $ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
-2.Vundle配置(.vimrc):<br>
+#### 2. Vundle配置(.vimrc):
 
     set nocompatible              " be iMproved, required
     filetype off                  " required
@@ -48,7 +48,7 @@ Vim非常强大，其中一个重要原因是丰富的插件。为了高效管�
 
 可以看到想安装插件只要在`call vundel#begin()`和`call vundle#end()`间加入相应的插件即可自动管理(格式如`Plugin 'VundleVim/Vundle.vim'`，该插件是必须的)。实践发现在`call vundle#end()`之后用`Bundle $PluginName`(格式如`Bundle 'Valloric/YoucompleteMe'`)也可以和上述`Plugin $PluginName`方式一样管理插件。
 
-3.安装插件:<br>
+#### 3. 安装插件:
 记得先`source $vimrcfile`($vimrcfile为上面的vimrc)，让其生效。然后
 打开vim输入
 
@@ -58,7 +58,7 @@ Vim非常强大，其中一个重要原因是丰富的插件。为了高效管�
 
     $ vim +PluginInstall +qall
 
-4.update插件:<br>
+#### 4. update插件:
 打开vim输入
 
     :PluginUpdate
@@ -67,7 +67,7 @@ Vim非常强大，其中一个重要原因是丰富的插件。为了高效管�
 
     $ vim +PluginUpdate +qall
 
-#### <strong>History:</strong>
+### History:
 * <em>2016-09-11</em>: 将内容记录下来<br>
 * <em>2016-09-13</em>: 修改排版<br>
 * <em>2018-01-06</em>: add update plugin<br>

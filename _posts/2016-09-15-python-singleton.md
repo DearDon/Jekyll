@@ -1,16 +1,15 @@
 ---
 layout: post
-title: python实现单例模式
+title: Python实现单例模式
 date: 2016-09-15
 categories: python 
 tags: programming
 ---
-#### <strong>Abstract:</strong>
+### Abstract:
 Singleton是创建模式中很典型的一类，在Java中是通过将构造函数private来实现的。在python中，没有private，我们通过share一个类或子类的所有成员变量来实现单例。<br>
-
 注意，虽然所有对象都共享相同的成员，但和Java中的单例还是有差别。java中是真的只建了一个对象，但python中实际有多个对象(id不同), 但成员相同。
 
-#### <strong>Content:</strong>
+### Content:
 话不多说，直接上代码，注释写得很清楚。只要将你自己的类继承下面的Singleton类，即实现了将你的类转换成了单例模式。
 
     class Singleton:
@@ -78,7 +77,7 @@ Singleton是创建模式中很典型的一类，在Java中是通过将构造函�
 
 最新实践发现，这种多个对象模拟单例对象的另一个问题————不能跨模块。如果在其它文件中导入该单例模块，再新建单例类的对象，会发现各模块中的单例对象不能实现共享了。
 
-#### <strong>History:</strong>
+### History:
 * <em>2016-09-11</em>:将实现单例的代码和注释记录下来<br>
 * <em>2016-09-21</em>:更新跨模块单例失败的问题<br>
 
