@@ -61,7 +61,7 @@ The final result is $x_{k+1}$. Above theory is derived from [wikipedia](https://
 
 #### 2. Numerical implemetation in Fortran:
 ##### 2.1. Fortran subroutine for conjugate gradient:
-{% highlight fortran linenos %}
+```fortran
 module conjugate_gradient_method
 	contains 
 !The following subroutine is the to get x from Ax=b by Conjugate Gradient
@@ -142,7 +142,7 @@ module conjugate_gradient_method
 	
 	end subroutine onedimenmul
 end module conjugate_gradient_method
-{% endhighlight %}
+```
 ##### 2.2. Conjugate gradient application:
 {% highlight fortran linenos %}
 program conjugate_gradient_example
