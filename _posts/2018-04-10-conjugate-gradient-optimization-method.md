@@ -38,23 +38,30 @@ The problem, which fit conjugate gradient method, could be expressed as followin
 $$ \mathbf{A}x=b $$
 
 where $A$ is a symmetric and positive-definite matrix, $x$ is the vector to be calculated, $b$ is the constant vector. Following is the computational steps for getting x(since it's systems of linear equation, initial $x_0$ could be any random value you like):
-\begin{align*}
- r_0 &= b - Ax_0 \\
- P_0 &= r_0 \\
- k &= 0 
-\end{align*}
+
+$$ r_0 = b - Ax_0 $$
+
+$$ P_0 = r_0 $$
+
+$$ k = 0 $$
+
 
 repeat:
 
 $$ \alpha_k = \dfrac{r^T_kr_k}{p^T_kAp_k} $$
+
 $$ x_{k+1} = x_k + \alpha_kp_k $$
+
 $$ r_{k+1} = r_k - \alpha_kAp_k $$
 
 if $r_{k+1}$ is sufficiently small, say $r_{k+1}^2<e$, then exist loop, else:
 
 $$ \beta_k = \dfrac{r^T_{k+1}r_{k+1}}{r^T_kr_k} $$
+
 $$ p_{k+1} = r_{k+1} + \beta_kp_k $$
+
 $$ k=k+1 $$
+
 end repeat
 
 The final result is $x_{k+1}$. Above theory is derived from [wikipedia](https://en.wikipedia.org/wiki/Conjugate_gradient_method#Numerical_example).
