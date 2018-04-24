@@ -38,10 +38,11 @@ The problem, which fit conjugate gradient method, could be expressed as followin
 $$ \mathbf{A}x=b $$
 
 where $A$ is a symmetric and positive-definite matrix, $x$ is the vector to be calculated, $b$ is the constant vector. Following is the computational steps for getting x(since it's systems of linear equation, initial $x_0$ could be any random value you like):
-
-$$ r_0 = b - Ax_0 $$
-$$ P_0 = r_0 $$
-$$ k = 0 $$
+\begin{align*}
+ r_0 &= b - Ax_0 \\
+ P_0 &= r_0 \\
+ k &= 0 
+\end{align*}
 
 repeat:
 
@@ -60,7 +61,7 @@ The final result is $x_{k+1}$. Above theory is derived from [wikipedia](https://
 
 #### 2. Numerical implemetation in Fortran:
 ##### 2.1. Fortran subroutine for conjugate gradient:
-{% highlight fortran %}
+{% highlight fortran linenos %}
 module conjugate_gradient_method
 	contains 
 !The following subroutine is the to get x from Ax=b by Conjugate Gradient
@@ -143,8 +144,7 @@ module conjugate_gradient_method
 end module conjugate_gradient_method
 {% endhighlight %}
 ##### 2.2. Conjugate gradient application:
-<script src="https://gist.github.com/DearDon/c1a6a101e129a2afee71d31d6a4a2dfa.js?file=conjugate_gradient_example.f90"></script>
-{% highlight fortran %}
+{% highlight fortran linenos %}
 program conjugate_gradient_example
 	use conjugate_gradient_method
 	real*8 x(2),A(2,2),b(2)
