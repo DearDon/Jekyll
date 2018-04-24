@@ -151,7 +151,7 @@ module conjugate_gradient_method
 end module conjugate_gradient_method
 ```
 ##### 2.2. Conjugate gradient application:
-```fortran
+```fortran linenos
 program conjugate_gradient_example
 	use conjugate_gradient_method
 	real*8 x(2),A(2,2),b(2)
@@ -163,7 +163,7 @@ program conjugate_gradient_example
 	n=2
 	call cg(A,b,x,n)
 end program conjugate_gradient_example
-```fortran
+```
 
 ### Questions:
 #### 1. Is it adapt to deeplearning issue?
