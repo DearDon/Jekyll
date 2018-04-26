@@ -16,10 +16,10 @@ Though it's not a general solution for optimization problem, but it's quite **ef
 #### 1. Theory:
 The conjugate gradient method is an algorithm for the numerical solution of particular systems of **linear equations**, namely those whose matrix $A$ is **symmetric** and **positive-definite**. For symmetric, it means $A$ need to satisfy Equation \eqref{symmetric}.
 
-$$ \begin{equation}
+$$ \begin{align}
 \label{symmetric}
 A=A^T \\
-\end{equation} $$
+\end{align} $$
 
 For positive-definite, it means for any real value vector $x$, we can have Equation \eqref{positive-def}.
 
@@ -163,7 +163,7 @@ end module conjugate_gradient_method
 {% endhighlight %}
 
 ##### 2.2. Conjugate gradient application:
-{% highlight fortran %}
+{% highlight fortran linenos %}
 program conjugate_gradient_example
 	use conjugate_gradient_method
 	real*8 x(2),A(2,2),b(2)
@@ -180,8 +180,11 @@ end program conjugate_gradient_example
 ### Questions:
 #### 1. Is it adapt to deeplearning issue?
 **No**. As we address above, it's adapted to linear system with extra requirements(symmetric and positive-definite) to coefficients matrix $A$. 
-Wince deeplearning is non-linear structure, muchless the extra requrements, so the original conjugate gradient method is **not suitable** for deeplearning.
+
+Since deeplearning is non-linear structure, muchless the extra requrements, so the original conjugate gradient method is **not suitable** for deeplearning.
+
 But there are some improvement that try to appply conjugate gradient to non-linear problem, but it may need more adjustments and tests to check if it could help on deeplearning training.
+
 #### 2. Is the error scale for measuring if training converge sensitive?
 **Yes**. the error variable $e$ in the code, which decide if loop converge, is quite sensitive. My own test case shows change $e=1.0\times10^{-3}$ to $e=1.0\times10^{-6}$ could improve very much for the solution precision.
  
