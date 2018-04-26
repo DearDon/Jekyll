@@ -190,4 +190,4 @@ But there are some improvement that try to appply conjugate gradient to non-line
  
 ### History: 
 * <em>2018-04-10</em>: create post for demonstration of conjugate gradient method 
-
+* <em>2018-04-26</em>: reformat this page by latex style equation and ref.
