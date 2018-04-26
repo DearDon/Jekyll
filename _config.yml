@@ -1,7 +1,6 @@
 markdown: kramdown
 kramdown:
-    input: GFM
-    line_numbers: true 
+    input: GFM 
 highlighter: rouge
 url: www.deardon.win
 lsi: false
