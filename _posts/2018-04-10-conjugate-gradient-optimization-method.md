@@ -41,9 +41,9 @@ where $A$ is a symmetric and positive-definite matrix, $x$ is the vector to be c
 
 $$ 
 \begin{align*}
-r_0 &= b - Ax_0 
-P_0 &= r_0 
-k &= 0 
+r_0 &= b - Ax_0 \\
+P_0 &= r_0 \\
+k &= 0 \\
 \end{align*}
 $$
 
