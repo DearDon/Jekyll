@@ -37,10 +37,12 @@ $$ \begin{align}
 \mathbf{A}x=b \\
 \end{align} $$
 
-where $A$ is a symmetric and positive-definite matrix, $x$ is the vector to be calculated, $b$ is the constant vector. Following is the computational steps for getting x. Since it's systems of linear equation, initial $x_0$ could be any random value you like.
+where $A$ is a symmetric and positive-definite matrix, $x$ is the vector to be calculated, $b$ is the constant vector. Following is the computational steps for getting x. Since it's systems of linear equation, initial $x_0$ could be any random value you like. 
+
+Firstly, initilaze variables as Equation \eqref{algo-init}.
 
 $$ \begin{align}
-\label{cg-problem}
+\label{algo-init}
 r_0 &= b - Ax_0 \\
 P_0 &= r_0 \\
 k &= 0 \\
