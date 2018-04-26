@@ -16,10 +16,10 @@ Though it's not a general solution for optimization problem, but it's quite **ef
 #### 1. Theory:
 The conjugate gradient method is an algorithm for the numerical solution of particular systems of **linear equations**, namely those whose matrix $A$ is **symmetric** and **positive-definite**. For symmetric, it means $A$ need to satisfy Equation \eqref{symmetric}.
 
-$$ \begin{align*}
+$$ \begin{equation}
 \label{symmetric}
 A=A^T \\
-\end{align*} $$
+\end{equation} $$
 
 For positive-definite, it means for any real value vector $x$, we can have Equation \eqref{positive-def}.
 
