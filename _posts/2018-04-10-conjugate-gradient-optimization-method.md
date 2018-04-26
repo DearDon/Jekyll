@@ -16,10 +16,10 @@ Though it's not a general solution for optimization problem, but it's quite **ef
 #### 1. Theory:
 The conjugate gradient method is an algorithm for the numerical solution of particular systems of **linear equations**, namely those whose matrix $A$ is **symmetric** and **positive-definite**. For symmetric, it means $A$ need to satisfy Equation \eqref{symmetric}.
 
-$$ \begin{align}
+$$ \begin{align*}
 \label{symmetric}
 A=A^T \\
-\end{align} $$
+\end{align*} $$
 
 For positive-definite, it means for any real value vector $x$, we can have Equation \eqref{positive-def}.
 
@@ -39,7 +39,7 @@ $$ \begin{align}
 
 where $A$ is a symmetric and positive-definite matrix, $x$ is the vector to be calculated, $b$ is the constant vector. Following is the computational steps for getting x. Since it's systems of linear equation, initial $x_0$ could be any random value you like. 
 
-Firstly, initilaze variables as Equation \eqref{algo-init1}\eqref{algo-init2}.
+Firstly, initilaze variables as Equation \eqref{algo-init1}\eqref{algo-init2}\eqref{algo-init3}.
 
 $$ \begin{align}
 \label{algo-init1}
@@ -50,23 +50,29 @@ P_0 &= r_0 \\
 k &= 0 \\
 \end{align} $$
 
-repeat:
+repeat Equation \eqref{algo-update1}\eqref{algo-update2}\eqref{algo-update3} to update $x$ and $r$.
 
 $$ \begin{align}
+\label{algo-update1}
 \alpha_k &= \dfrac{r^T_kr_k}{p^T_kAp_k} \\
+\label{algo-update2}
 x_{k+1} &= x_k + \alpha_kp_k \\
+\label{algo-update3}
 r_{k+1} &= r_k - \alpha_kAp_k \\
 \end{align} $$
 
-if $r_{k+1}$ is sufficiently small, say $r_{k+1}^2<e$, then exist loop, else:
+if $r_{k+1}$ is sufficiently small, say $r_{k+1}^2<e$, when $e$ is a given small number. then exist loop, else udpate $p$ by Equation \eqref{algo-update4}\eqref{algo-update5}, and increase $k$ as Equation \eqref{algo-update6}.
 
 $$ \begin{align}
+\label{algo-update4}
 \beta_k &= \dfrac{r^T_{k+1}r_{k+1}}{r^T_kr_k} \\
+\label{algo-update5}
 p_{k+1} &= r_{k+1} + \beta_kp_k \\
+\label{algo-update6}
 k &= k+1 \\
 \end{align} $$
 
-end repeat
+go back to loop Equation \eqref{algo-update1}\eqref{algo-update2}\eqref{algo-update3}.
 
 The final result is $x_{k+1}$. Above theory is derived from [wikipedia](https://en.wikipedia.org/wiki/Conjugate_gradient_method#Numerical_example).
 
@@ -74,7 +80,6 @@ The final result is $x_{k+1}$. Above theory is derived from [wikipedia](https://
 ##### 2.1. Fortran subroutine for conjugate gradient:
 
 {% highlight fortran linenos %}
-```
 module conjugate_gradient_method
 	contains 
 !The following subroutine is the to get x from Ax=b by Conjugate Gradient
@@ -155,12 +160,10 @@ module conjugate_gradient_method
 	
 	end subroutine onedimenmul
 end module conjugate_gradient_method
-```
 {% endhighlight %}
 
 ##### 2.2. Conjugate gradient application:
-```
-{% highlight fortran linenos %}
+{% highlight fortran %}
 program conjugate_gradient_example
 	use conjugate_gradient_method
 	real*8 x(2),A(2,2),b(2)
@@ -173,7 +176,7 @@ program conjugate_gradient_example
 	call cg(A,b,x,n)
 end program conjugate_gradient_example
 {% endhighlight %}
-```
+
 ### Questions:
 #### 1. Is it adapt to deeplearning issue?
 **No**. As we address above, it's adapted to linear system with extra requirements(symmetric and positive-definite) to coefficients matrix $A$. 
