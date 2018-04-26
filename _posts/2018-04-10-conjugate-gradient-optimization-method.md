@@ -13,7 +13,7 @@ tags: data-science
       }
     },
     tex2jax: {
-      inlineMath: [ ['$','$'], ['\(', '\)'] ],
+      inlineMath: [ ['$','$'] ],
       displayMath: [ ['$$','$$'] ],
       processEscapes: true
     }
@@ -31,7 +31,9 @@ Though it's not a general solution for optimization problem, but it's quite **ef
 The conjugate gradient method is an algorithm for the numerical solution of particular systems of **linear equations**, namely those whose matrix $A$ is **symmetric** and **positive-definite**. 
 For symmetric, it means:
 
-$$ A=A^T $$
+$$ \begin{align}
+A=A^T \\
+\end{align} $$
 
 For positive-definite, it means for any real value vector $x$, we can assure:
 
@@ -41,7 +43,9 @@ We can see there are many preconditions for conjugate gradient method, but there
 
 The problem, which fit conjugate gradient method, could be expressed as following:
 
-$$ \mathbf{A}x=b $$
+$$ \begin{align}
+\mathbf{A}x=b \\
+\end{align} $$
 
 where $A$ is a symmetric and positive-definite matrix, $x$ is the vector to be calculated, $b$ is the constant vector. Following is the computational steps for getting x(since it's systems of linear equation, initial $x_0$ could be any random value you like):
 
@@ -51,19 +55,13 @@ P_0 &= r_0 \\
 k &= 0 \\
 \end{align} $$
 
-\begin{align}
-r_0 &= b - Ax_0 \\
-P_0 &= r_0 \\
-k &= 0 \\
-\end{align}
-
 repeat:
 
-$$ \begin{align*}
+$$ \begin{align}
 \alpha_k &= \dfrac{r^T_kr_k}{p^T_kAp_k} \\
 x_{k+1} &= x_k + \alpha_kp_k \\
 r_{k+1} &= r_k - \alpha_kAp_k \\
-\end{align*} $$
+\end{align} $$
 
 if $r_{k+1}$ is sufficiently small, say $r_{k+1}^2<e$, then exist loop, else:
 
