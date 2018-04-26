@@ -14,31 +14,33 @@ Though it's not a general solution for optimization problem, but it's quite **ef
 
 ### Content:
 #### 1. Theory:
-The conjugate gradient method is an algorithm for the numerical solution of particular systems of **linear equations**, namely those whose matrix $A$ is **symmetric** and **positive-definite**. 
-For symmetric, it means:
+The conjugate gradient method is an algorithm for the numerical solution of particular systems of **linear equations**, namely those whose matrix $A$ is **symmetric** and **positive-definite**. For symmetric, it means $A$ need to satisfy Equation \eqref{symmetric}.
 
 $$ \begin{align}
-\label{eq1}
+\label{symmetric}
 A=A^T \\
 \end{align} $$
 
-For positive-definite, it means for any real value vector $x$, we can assure: Eq~\eqref{eq1}
+For positive-definite, it means for any real value vector $x$, we can have Equation \eqref{positive-def}.
 
 $$ \begin{align}
+\label{positive-def}
 x\mathbf{A}x^T>0 \\
 \end{align} $$
 
 We can see there are many preconditions for conjugate gradient method, but there are advantages. It require less memory than computing reverse $A^{-1}$ by Jacobi equation. And it can guarantee that only n iterations(n is the row or column of $A$, here we ignore computing error) are needed to converge the solution, which is far more faster and reliable than Newton gradient method.
 
-The problem, which fit conjugate gradient method, could be expressed as following:
+The problem, which fit conjugate gradient method, could be expressed as Equation \eqref{cg-problem}.
 
 $$ \begin{align}
+\label{cg-problem}
 \mathbf{A}x=b \\
 \end{align} $$
 
-where $A$ is a symmetric and positive-definite matrix, $x$ is the vector to be calculated, $b$ is the constant vector. Following is the computational steps for getting x(since it's systems of linear equation, initial $x_0$ could be any random value you like):
+where $A$ is a symmetric and positive-definite matrix, $x$ is the vector to be calculated, $b$ is the constant vector. Following is the computational steps for getting x. Since it's systems of linear equation, initial $x_0$ could be any random value you like.
 
 $$ \begin{align}
+\label{cg-problem}
 r_0 &= b - Ax_0 \\
 P_0 &= r_0 \\
 k &= 0 \\
