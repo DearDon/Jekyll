@@ -7,8 +7,14 @@ tags: data-science
 --- 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: {
+        autoNumber: "AMS"
+      }
+    },
     tex2jax: {
-      inlineMath: [ ['$','$'] ],
+      inlineMath: [ ['$','$'], ['\(', '\)'] ],
+      displayMath: [ ['$$','$$'] ],
       processEscapes: true
     }
   });
@@ -45,13 +51,19 @@ P_0 &= r_0 \\
 k &= 0 \\
 \end{align} $$
 
+\begin{align}
+r_0 &= b - Ax_0 \\
+P_0 &= r_0 \\
+k &= 0 \\
+\end{align}
+
 repeat:
 
-$$ \begin{align}
+$$ \begin{align*}
 \alpha_k &= \dfrac{r^T_kr_k}{p^T_kAp_k} \\
 x_{k+1} &= x_k + \alpha_kp_k \\
 r_{k+1} &= r_k - \alpha_kAp_k \\
-\end{align} $$
+\end{align*} $$
 
 if $r_{k+1}$ is sufficiently small, say $r_{k+1}^2<e$, then exist loop, else:
 
