@@ -32,12 +32,15 @@ The conjugate gradient method is an algorithm for the numerical solution of part
 For symmetric, it means:
 
 $$ \begin{align}
+\label{eq1}
 A=A^T \\
 \end{align} $$
 
-For positive-definite, it means for any real value vector $x$, we can assure:
+For positive-definite, it means for any real value vector $x$, we can assure: Eq~\eqref{eq1}
 
-$$ x\mathbf{A}x^T>0 $$
+$$ \begin{align}
+x\mathbf{A}x^T>0 \\
+\end{align} $$
 
 We can see there are many preconditions for conjugate gradient method, but there are advantages. It require less memory than computing reverse $A^{-1}$ by Jacobi equation. And it can guarantee that only n iterations(n is the row or column of $A$, here we ignore computing error) are needed to converge the solution, which is far more faster and reliable than Newton gradient method.
 
