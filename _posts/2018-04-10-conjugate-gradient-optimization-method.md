@@ -39,27 +39,27 @@ $$ \mathbf{A}x=b $$
 
 where $A$ is a symmetric and positive-definite matrix, $x$ is the vector to be calculated, $b$ is the constant vector. Following is the computational steps for getting x(since it's systems of linear equation, initial $x_0$ could be any random value you like):
 
-$$ \begin{align*}
+$$ \begin{align}
 r_0 &= b - Ax_0 \\
 P_0 &= r_0 \\
 k &= 0 \\
-\end{align*} $$
+\end{align} $$
 
 repeat:
 
-$$ \begin{align*}
+$$ \begin{align}
 \alpha_k &= \dfrac{r^T_kr_k}{p^T_kAp_k} \\
 x_{k+1} &= x_k + \alpha_kp_k \\
 r_{k+1} &= r_k - \alpha_kAp_k \\
-\end{align*} $$
+\end{align} $$
 
 if $r_{k+1}$ is sufficiently small, say $r_{k+1}^2<e$, then exist loop, else:
 
-$$ \begin{align*}
+$$ \begin{align}
 \beta_k &= \dfrac{r^T_{k+1}r_{k+1}}{r^T_kr_k} \\
 p_{k+1} &= r_{k+1} + \beta_kp_k \\
 k &= k+1 \\
-\end{align*} $$
+\end{align} $$
 
 end repeat
 
