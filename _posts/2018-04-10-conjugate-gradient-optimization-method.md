@@ -3,23 +3,9 @@ layout: post
 title: Conjugate Gradient Method
 date: 2018-04-10 
 categories: optimization
-tags: data-science 
+tags: data-science
+use_math: true
 --- 
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      equationNumbers: {
-        autoNumber: "AMS"
-      }
-    },
-    tex2jax: {
-      inlineMath: [ ['$','$'] ],
-      displayMath: [ ['$$','$$'] ],
-      processEscapes: true
-    }
-  });
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
 
 ### Abstract: 
 Conjugate gradient method is one of the improved gradient algorithms for optimization. 
