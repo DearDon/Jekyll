@@ -15,6 +15,10 @@
     <link href="/css/blog.css" rel="stylesheet">
     <!-- Syntax CSS -->
     <link href="/css/syntax.css" rel="stylesheet">
+    <!-- latex math support -->
+    {% if page.use_math %}
+      {% include mathjax_support %}
+    {% endif %}
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media
     queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file://
